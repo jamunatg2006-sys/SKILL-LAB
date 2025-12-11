@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐔Slap The Chicken🐔</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <h2 class="mb-4" style="text-align:center">🐔Slap The Chicken🐔</h2>
+    <h3 style="text-align:center; margin-bottom: 30px;">This Game is Built Using jQuery, Bootstrap and HTML</h3>
+    
+    <button id="chicken" class="btn btn-warning" >🐔</button>
+    <p id="msg" class="mt-4"></p>
+    
+    <script src="index.js"></script>
+    <style>
+        body { min-height: 100vh; }
+        /* Message visible in front and larger */
+        #msg {
+            position: absolute;
+            top: 180px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+            font-weight: 700;
+            z-index: 9999;
+            color: #111;
+            padding: 6px 12px;
+            pointer-events: none; /* allow clicks through message */
+            text-align: center;
+        }
+        /* Ensure chicken is under the message */
+        #chicken { z-index: 1; }
+    </style>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        padding-top: 20px;
+        background-color: beige;
+    }
+    #chicken {
+        margin-top: 50px;
+        position: relative;
+    }
+</style>    
+</body>
+</html>
